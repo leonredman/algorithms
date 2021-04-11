@@ -55,7 +55,7 @@ function playToFive() {
       computerRunningTotal++;
     }
 
-    alert("Player chose " + userChoice + " while Computer chose " + computerChoice + "! \nThe score is Player "+ playerRunningTotal + ", Computer " + computerRunningTotal + ".");
+    alert("Player chose " + userChoice + " while Computer chose " + computerChoice + "! \n The score is Player "+ playerRunningTotal + ", Computer " + computerRunningTotal + ".");
   }
 }
 
