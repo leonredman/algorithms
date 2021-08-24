@@ -61,5 +61,4 @@ let myLinkedList = New LinkedList(1)
 myLinkedList.push(2)
 
 // to run the pop
-
 myLinkedList.pop();
