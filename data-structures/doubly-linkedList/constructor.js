@@ -22,3 +22,7 @@ class DoublyLinkedList {
     this.length = 1;
   }
 }
+
+// create new DOUBLYLINEDLIST
+let myDoublyLinkedList = new DoublyLinkedLisgt(7);
+myDoublyLinkedList;
