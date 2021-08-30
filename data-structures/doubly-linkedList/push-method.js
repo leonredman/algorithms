@@ -1,10 +1,10 @@
 //DOUBLY LINKED LIST PUSH METHOD
 
-
+//  push - pass it a value
 push(value) {
   //create new node and pass it a value
   const newNode = new Node (value)
-  // if start with empty linked list
+  //  start with empty linked list
   if (!this.head) {
     this.head = newNode
     this.tail = newNode
