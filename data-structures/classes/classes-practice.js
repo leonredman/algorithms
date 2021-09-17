@@ -1,3 +1,4 @@
+//classes use functions and prototypal inheritance
 // A class is like a cookie cutter
 // create a class and give it a name "Cookie" for example
 {
