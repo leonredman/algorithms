@@ -1,5 +1,5 @@
 // STACKS
-// Note We can reuse alot of code from linked list for stacks
+// Note we can reuse alot of code from linked list for stacks
 // what is a stack?
 //its like a can of tennis balls. We can push onto the stack and remove from the stack or Popping from stack
 // if you put 2 tennis balls into the stack you cant get out the first one without taking out the second
@@ -11,7 +11,11 @@
 // Using an array is very easy. It matters which end you use.
 // If you remove from the end its O(1)
 // If you remove from the beginning its O(n) as you will have to re-index everything
-// always use the end.
+// always use the end - NOT THE BEGINNING
 // We pop and push to the end of the stack, and the array is just stacked vertical, hot horizontal.
 // we alter a linked list to create a stack and not an array.
-// The null terminated end is always at the bottom.
+// The null terminated end is always at the bottom. The left side is at the top
+
+//To remove  on the end is O(n) to add is O(1), if we use the left they are both O(n)
+
+// we rename head and tail as Top and bottom. We dont need bottom so we just use Top
