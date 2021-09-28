@@ -1,6 +1,7 @@
 // STACKS - CONSTRUCTOR
 
 // to create a stack we create a node and its identical to a linked list node
+// this is our node
 {
   value:11,
   next: null

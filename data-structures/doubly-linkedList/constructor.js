@@ -24,5 +24,5 @@ class DoublyLinkedList {
 }
 
 // create new DOUBLYLINEDLIST
-let myDoublyLinkedList = new DoublyLinkedLisgt(7);
+let myDoublyLinkedList = new DoublyLinkedList(7);
 myDoublyLinkedList;
