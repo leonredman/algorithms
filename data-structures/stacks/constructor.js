@@ -4,7 +4,7 @@
 // this is our node
 {
   value:11,
-  next: null
+  next:null
 }
 
 // so node class and constructor are the same also (identical to linked list)
