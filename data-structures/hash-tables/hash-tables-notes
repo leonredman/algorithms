@@ -1,0 +1,35 @@
+Hash Tables
+
+There are built in Hash Tables in Javascript  and they are known as objects
+We are going to implement out own
+
+we can do an example where we build an array with address space
+We can build an inventory for a hardware store for example
+
+We use key value pairs and run them thru the hash
+{nails: 1000}
+
+It is only the key (nails) that is run thru the hash
+all letters have an ASCI numerical value - these are run thru a math equation and we are given a number
+Example we are given 2 - that is where we put the object in the table in memory
+
+The hash function  - basically does a calculation and  outputs the result in memory to an address (example 2)
+
+CHARACTERISTICS OF A HASH  
+
+This is a one way.   If you take nails and run it through the hash and it gives youjb   a value of 2
+YOU Cannot take 2 and run it through the hash and have it give you Nails.  It wont do this.
+
+Hashes are also DETERMINISTIC - meaning it will always produce he same number, so every time you run nails 
+through the hash generator it will give you the value 2
+
+set(key, value)
+
+Another example if we run set with a key and value - set('nails, 1000)  this will give us an array ['nails, 1000]
+it will also give us an address based on the calculation it does on the string nails and we get the value 2, so we put it in that address
+
+COLLISIONS
+
+If we run our hash over a few values and place them in our generated locations we see that we can end up
+with a COLLISION, where 2 different key value pairs may end up in the same location with value of 2.  We dont 
+overwrite them in that location, they are able to all go in that location. Its an Array with arrays inside.
