@@ -33,3 +33,11 @@ COLLISIONS
 If we run our hash over a few values and place them in our generated locations we see that we can end up
 with a COLLISION, where 2 different key value pairs may end up in the same location with value of 2.  We dont 
 overwrite them in that location, they are able to all go in that location. Its an Array with arrays inside.
+
+get('bolts)
+
+if we have a array as an element ran thru the hash ['bolts', 1400]
+and we run the get method thru the hash, we get the value location of 4 and it will return the quantity value of 1400
+
+if we run get(nails) thru the hash, we get back the value location of 2 
+here we have to go thru the different arrays that are stored in that location and find the one that is nails and return the quantity value
