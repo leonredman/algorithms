@@ -4,6 +4,7 @@
 //we have to get something by the index
 
 get(key){
+  // we have a variable called index and we use the hash method to determine index and pass it the key, this calculates what the address is
  let index = this._hash(key)
  // determine if anything is at that address, if not return undefined
  if(this.dataMap [index]) {
@@ -14,6 +15,7 @@ if (this.dataMap[index][i][0] === key){
     }
   }
  }
+ // if nothing then returns undefined
  return undefined
 }
 
