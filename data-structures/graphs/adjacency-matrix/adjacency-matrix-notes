@@ -1,0 +1,26 @@
+There a couple of ways we can store a graph
+1. adjacency matrix
+2. adjacency list.
+
+ADJACENCY MATRIX:
+
+say we have a graph with 5 elements and they are named a,b,c,d,e 
+The adjacency matrix would look like a table with the elements in a row at the top and side.
+We start with A  at the top and it points to E and B, so in the matrix we would put a 1 for each of those {see image 1}
+We put Zeros in the spots that A does not point to (A,C and D)
+
+Then we Have element B and it points to elements A and C.
+ This is how we build out an adjaceny matrix
+
+ The axis of the adjacency matrix verticle column on the left is the vertex
+ The horizontal column in the matrix is what the vertex points to or not
+
+ A cannot point to A 
+ B cannot point to B 
+ and so on so we get a 45 degree line where they are always zeros
+ If the graph has all bi-directional connections the matrix is going to be symetrical across the 45 degree line and 
+ will be a mirror image
+
+ If one of the elements is one directional the matrix is no longer symetrical
+
+ If the graph is weighted we can change the matrix so instead of using all 'ones' we can store the weights in the matrix

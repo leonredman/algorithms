@@ -1,0 +1,23 @@
+Adjacency List
+
+Instead of a Matrix, we can also express the graph as a list. For this we can simply store as an object
+
+So an Adjacenty List is simply expressed it as an object
+The element A is the key, and the edges that it points to are an array of "B" and "E"
+
+ {
+  A:["B", "E"]
+}
+
+A is the key
+and the edges we are connecting to are E and B
+
+Our Full graph looks like this as an object
+
+{
+  A:["B", "E"],
+  B:["A", "C"],
+  C:["B", "D"],
+  D:["C", "E"],
+  E:["A", "D"],
+  }

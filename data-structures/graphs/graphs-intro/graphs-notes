@@ -1,0 +1,29 @@
+GRAPHS
+
+TERMINOLOGY:
+
+An element in a graph is Called a Vertex (sometimes is is called a node, but proper name is Vertex)
+
+If we have 2 elements and a line between them this is called an Edge (proper term) or Connection
+
+If we have 3 Vertex (elements), then you can have connections between each  or all the Vertex in the graph (image examples Vertex1,2,3)
+There is no limitation to how many verticies can connect too or have edges with.
+
+What are they used for?
+They are good for Maps Apps like a GPS on your phone.
+
+We can weight the Edges on the graph 
+The edge weights help determine the least cost path. So if one edge is weighted 15 and the other 2 are weighted
+3 and 2 then they are the least cost path even though there are 2 edges vs the 1.  THere are 2 fast links vs one Slow one.
+
+There are another feature of graphs.
+Say we are building facebook and we have 2 accounts. You and a friend. Both are linked. Bi directional relationship (edges)
+If there are not arrows show on the Edges it is considered  bidirectional by default
+
+On the platform say you follow someone but they dont follow you back that is a one way directional. These have arrows pointing one way only.
+This is a one way relationship.
+
+A Binary Tree is a type or graph with limitations they can only point to 2 other items and each of the connections are directional
+Linked List is also type of tree, so this is also a type of a graph that can be one directional, or doubly linked list which is bi directional.
+
+When we think of graphs though we generally think of typical graphs(see image)

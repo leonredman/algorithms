@@ -15,3 +15,5 @@
 // Built in HashTables in javascript are typically objects. The Hash Function is going to be very
 // efficient at randomizing the addresses so it will look spread out. Collisions are rare.
 //Finding things by the Key Value Pair is O(1)
+
+// Insert and Lookup are always O(1) in Hash Tables so it is NOT always better than a Binary Search Tree
