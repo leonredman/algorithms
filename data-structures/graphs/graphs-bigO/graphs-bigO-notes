@@ -1,0 +1,28 @@
+BIG O of Graphs
+
+SPACE COMPLEXITY:
+
+In an Adjacency Matrix vs a List, we see that the Adjacency 
+list stores the Vertex and the edges (as an object). 
+In the Adjacency Matrix we have to store the edges (B and E) 
+as they are pointed to with 1's. But we have to store all 
+the zeros also. This makes the matrix very in-efficient for space COMPLEXITY
+
+The matrix is the number of verticies squared
+O(|V|squared)
+
+The List is the Number of Verticies plus the Number of edges
+O(|V|+|E|)
+
+ADD A VERTEX:
+If we add a vertex F
+
+TO ADD IN A ADJACENCY LIST:
+Very easy to add, we just slide in another vertex at the end of the list F:[]
+
+TO ADD IN A ADJACENCY MATRIX:
+We must change the matrix to look different with another horizontal and verticle column
+This is equivilant to creating a new Matrix, so the time complexity is the number of Verticies 
+Squared for the Matrix but O(1) for the list
+
+TO CREATE AN EDGE BETWEEN B AND F:
