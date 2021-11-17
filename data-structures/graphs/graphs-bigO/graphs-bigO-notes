@@ -6,7 +6,7 @@ In an Adjacency Matrix vs a List, we see that the Adjacency
 list stores the Vertex and the edges (as an object). 
 In the Adjacency Matrix we have to store the edges (B and E) 
 as they are pointed to with 1's. But we have to store all 
-the zeros also. This makes the matrix very in-efficient for space COMPLEXITY
+the zeros also. WE have to store BOTH (points to and Does Not point to)This makes the matrix very in-efficient for SPACE COMPLEXITY
 
 The matrix is the number of verticies squared
 O(|V|squared)
@@ -14,15 +14,65 @@ O(|V|squared)
 The List is the Number of Verticies plus the Number of edges
 O(|V|+|E|)
 
-ADD A VERTEX:
-If we add a vertex F
 
-TO ADD IN A ADJACENCY LIST:
-Very easy to add, we just slide in another vertex at the end of the list F:[]
+TO ADD A VERTEX:
+Say we add a vertex 'F'
+
+ADDING IN A ADJACENCY LIST:
+Very easy to add, we just slide in another vertex at the end of the list 'F:[]'
+The Time Complexity is O(1)
 
 TO ADD IN A ADJACENCY MATRIX:
 We must change the matrix to look different with another horizontal and verticle column
-This is equivilant to creating a new Matrix, so the time complexity is the number of Verticies 
-Squared for the Matrix but O(1) for the list
+This is equivilant to creating a new Matrix, so the time complexity is the number of Verticies 'Squared '
+O(|V|2) for the Matrix 
 
-TO CREATE AN EDGE BETWEEN B AND F:
+But O(1) for the Adjacency list  (see timecomplexity images)
+
+
+TO ADD AN EDGE BETWEEN B AND F (Push):
+
+LIST:
+We PUSH an 'F' onto the B array, and we push a B onto the F array
+
+Matrix
+we change the values from 0 to 1 for both on the new matrix
+
+BigO for both List and Matrix is O(1)
+
+
+TO REMOVE AN EDGE BETWEEN 2 VERTICIES
+
+LIST:
+ We have to remove from 'B' an "F"
+ We start at key - 'B' and have to go thru the array to look for an F.  This can be quite large.
+ We then go to the key 'F' and go thru the array and find the "B" and remove that.
+
+ MATRIX: 
+ With a matrix, we just go to the column intersection of BF and change it to zero, 
+ and then go to the intersection of FB and change it to zero
+
+BIG O 
+the advantage goes to the Matrix as the Big O is  O(1)  
+and the List is O(|E|)  The number of Edges we have to iterate through on the 
+adjacency list
+
+REMOVING A VERTEX
+
+LIST:
+To remove a vertex, you have to go into each vertex and check for any edges.
+You have to go and touch every Vertex and every edge to look for any 'F's
+If your list is BiDirectional there is a short cut to make it a little more efficient,
+ but you still have to look at all verticies and iterate thru the edges arrays to check
+
+ The list is O(|V|+|E|)
+  inefficient as you touch everything, but better than a Matrix
+
+ MATRIX
+ On a matrix you simply remove the verticies and columns from the table. It is also 
+ very inefficient
+
+ The matrix is O(|V|squared)
+
+ Comparison
+ Matrix - very inefficient when becomes large vs a list.
