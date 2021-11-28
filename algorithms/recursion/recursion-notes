@@ -1,11 +1,40 @@
-Recursion
-
-This is used alot in algorithms
+RECURSION
 Recursion is a function that calls itself..... until it doesn't.
+(This is used alot in algorithms)
+
 
 Example is a Gift box and we need to open it.
 We would use the openGiftBox() method.
-The yeild would either be a ball inside the box, or  another gift box inside the previous gift box.
+The yeild would either be a ball inside the box, or another gift box inside the previous gift box.
 We would then have to open the second gift box with the openGiftBox() method also.
-We would then get an orange ball, or... we would get an even small gift box.
+We would then get an orange ball, or... we would get an even smaller gift box. Each time we call
+the function, it creates another instance of the gift box
 We then run the method again and finally get the orange ball.
+
+Pseudo Code:
+function openGiftBox() {
+  if (isBall) return ball
+  openGiftBox()
+}
+
+the function calls itself
+
+- the process of opening each new box  must be the same
+- each time we open a box, we are making the problem smaller
+  (each time the funcion calls itself it has to be operating on a smaller and smaller problem)
+
+  BASE CASE 
+  When we open the box and it has the ball in it. This is called our base case ( when the if statement is true)
+
+  RECURSIVE CASE
+  If we open the box and we find another box, this is called the recursive case. In this case we need to
+  have the function call itself again. This will happen until we find the ball (base case).
+
+  INFINITE LOOP
+  When you have a recursive funciton and 'no' if statement that causes the loop to stop. This causes what is 
+  known as a stack overflow and an infinite loop.
+
+  Commom Mistakes
+  - having an if statement that is never true. if ( 1 > 2) return ball.  This is never true
+  - must have to have a "return statement". if (isBall) console.log ('Hello) - this will yeild a stack overflow
+   (because there is no return statement, will go to next line of code wich is the call function openGiftBox and infintate loop)

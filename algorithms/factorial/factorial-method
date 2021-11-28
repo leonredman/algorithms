@@ -1,0 +1,12 @@
+function factorial(n) {
+  if (n === 1) return 1;
+  return n * factorial(n - 1);
+}
+
+factorial(4);
+// yeild is 24
+
+// note factorials grow very very fast the numbers grow
+// in debugger if we create a break point and step thru the code
+// the call stack shows factorial, but no number
+// In the code itself though, n will equal the actual number as we step thru as we pop off the call the stack

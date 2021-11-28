@@ -1,0 +1,50 @@
+FACTORIAL NOTES
+
+Fctorial is used as an example of how to use recursion
+
+What is Factorial?
+
+This is factorial:
+
+ 4!  ( four factorial)
+
+ it is  4 * 3 * 2 * 1 
+
+ The last 3 numbers 3 * 2 * 1 = 3!  or 3 factorial
+
+ so we could say that is is 4 * 3!
+
+ we can keep breaking this down to the final base case 
+ 4!
+ 4 * 3!
+     3 * 2!
+          2 * 1!
+              1  (Base Case)  (gets smaller and smaller, same as getting to ball in recursion box example)
+
+CODE EXAMPLE 
+
+function factorial(n) {   // n would be 4
+  if(n === 1) return 1    // if we ever get to point where n equal one we return 1
+  return n * factorial(n-1)  // otherwise we return n times 
+}
+
+this breaks down to 
+
+factorial(4)
+return 4 * factorial(3)
+return 3 * factorial(2)
+return 2 * factorial(1)
+return 1                 // if statement show we have one in their so we return one
+
+we can then do the math... The one is being returned is the one in the return 2 * factorial(1) statement
+so we can calculate 2 * 1 which returns 2. Which moves up and we calculate 3 time 2 and we return 6 etc.
+
+Code walk thru
+
+factorial(4) = 24
+
+return 4 * 6 = 24 
+
+return 3 * 2 = 6 (6 moves up)
+
+return 2 * 1 = 2 (2 moves up)
