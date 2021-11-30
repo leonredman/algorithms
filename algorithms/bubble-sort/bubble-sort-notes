@@ -1,0 +1,21 @@
+BUBBLE SORT ALGORITHM
+
+The easiest algorithm to start with
+
+Say we have an array [4,2,6,5,1,3]
+
+How it works?
+
+We compare the first item (4) with the second item (2)
+If the first item is bigger than the second Item we switch them so now its (2) then (4)
+then
+we compare the second item with the third item  (4) and (6) - its not bigger so we leave them.
+then
+we Compare the third item to the fourth item (6) and (5) and if its bigger we switch then.
+We go down the line doing this until we get to the last item.
+
+Whatever the largest item is that is bubbled all the way up to the top
+It took 5 steps to get that to the end in a 6 item array.
+
+We then go through with each item until they are all bubbled up.
+The comparisions get smaller and smaller each time.
