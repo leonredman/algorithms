@@ -1,0 +1,31 @@
+SELECTION SORT
+
+We start with an array.
+Selection sort is similar to bubble sort except "we keep track of the indexs"
+So our array [4,2,6,5,1,3]  has indexes 0 - 5
+
+We start with the first item and we assign a variable called 'min' and we set min to the first index in the array. "min = 0"
+This is the first index
+we then compare this item to everything else in the array
+The element '2' is smaller than element '4' so we store the index of 1 as min
+We move down the line comparing until we find that element 2 is greater than element 1 so we store Min as index 4
+until we get to the end of the array.  Once we have completed our first pass
+we then switch the two items at the indexes. So for this example we switch the values of 4 at index 0 with value of 1 at index of 4
+
+[1,2,6,5,4,3]  is now our array after the first pass.(4 and 1 have changed positions)
+
+We then start with the next item in the array which is the value of 2 at the index of 1. So min is set to 1  "min = 1"
+We then compare it to everything else.
+This item of 2 is in the right position so it does not move in this example - we color it green in image to show complete.
+
+The third item in the array has a value of 6 and index of 2
+we set min = 2
+We compare  each element and replace the min with the index of lowest value. We see that index of 5 had lowest value of 3
+We switch the values at the index of 2 and index 5 so the new array is 
+[1,2,3,5,4,6]
+
+We iterate thru again and compare the value of 5  which is a min of 3 and value of 4 with index of 4
+We see that the value of 4 is lower than 5 so we switch those 
+arry is now [1,2,3,4,5,6]
+
+Then we compare the last 2 items which are values of 5 and 6, these are in the correct order so dont need to move
