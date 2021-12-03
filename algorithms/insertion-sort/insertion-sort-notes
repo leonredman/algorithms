@@ -1,0 +1,12 @@
+INSERTION SORT
+
+This method always starts with the second item
+We then compare it to item before it
+If it is less than the item before it, we switch them
+Then we move to the next item.
+If the item is not less than the item before it, then it stays put
+We then move to the next item
+
+We compare that item to the item before it and if its less than we then move it over
+We then also compare it to the next new item before it after it moved and if its less than we move over it again
+Once we find the item before is not less than we insert it back into the array
